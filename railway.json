@@ -1,0 +1,11 @@
+{
+  "build": {
+    "builder": "dockerfile",
+    "dockerfilePath": "Dockerfile.prod"
+  },
+  "deploy": {
+    "restartPolicyType": "always",
+    "healthcheckPath": "/health",
+    "healthcheckTimeout": 100
+  }
+}
