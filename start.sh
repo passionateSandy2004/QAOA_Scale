@@ -23,4 +23,4 @@ exec gunicorn \
     --access-logfile - \
     --error-logfile - \
     --log-level info \
-    "api:create_app()"
+    api:create_app
